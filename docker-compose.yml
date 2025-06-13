@@ -1,4 +1,13 @@
 services:
+  image-generator:
+    image: ghcr.io/mkcfdc/image-generator:latest
+    container_name: image-generator
+    restart: unless-stopped
+    ports:
+      - "3000:3000"               # Expose only if you need external access
+    environment:
+      - NODE_ENV=production
+      # - PORT=3000           
   la12-addon:
     build:
       context: .
@@ -7,10 +16,12 @@ services:
     container_name: la12-addon
     restart: unless-stopped
     ports:
-      - "7000:7000" 
+      - "7000:7000"
     environment:
-      # - PORT=7000
-      # - NODE_ENV=production
-      # - IMAGE_GENERATOR_BASE_URL=
-      # - TIMEZONE_OFFSET_HOURS="-6" # Has default.
-      # - SOURCE_TIMEZONE_OFFSET_HOURS="-6" # Has default.
+      - PORT=7000
+      - NODE_ENV=production
+      - IMAGE_GENERATOR_BASE_URL=http://image-generator:3000
+      - TIMEZONE_OFFSET_HOURS=-6
+      - SOURCE_TIMEZONE_OFFSET_HOURS=-6
+    depends_on:
+      - image-generator
