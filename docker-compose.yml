@@ -9,10 +9,7 @@ services:
       - NODE_ENV=production
       # - PORT=3000           
   la12-addon:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: la12-addon:latest
+    image: ghcr.io/mkcfdc/addon-sport-live-stremio:latest
     container_name: la12-addon
     restart: unless-stopped
     ports:
@@ -20,7 +17,7 @@ services:
     environment:
       - PORT=7000
       - NODE_ENV=production
-      - IMAGE_GENERATOR_BASE_URL=http://localhost:3001
+      - IMAGE_GENERATOR_BASE_URL=http://localhost:3001 # Recommend you use your internal IP here example: http://192.168.0.121:3001
       - TIMEZONE_OFFSET_HOURS=-6
       - SOURCE_TIMEZONE_OFFSET_HOURS=-6
     depends_on:
