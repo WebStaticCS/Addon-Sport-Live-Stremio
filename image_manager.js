@@ -71,7 +71,7 @@ function getPosterImage(title, status) {
         const encodedLiveText = encodeURIComponent(liveTextParam);
         const encodedImageUrl = encodeURIComponent(baseImageUrl);
 
-        const generatedImageUrl = `${IMAGE_GENERATOR_BASE_URL}?imageUrl=${encodedImageUrl}&liveText=${encodedLiveText}`;
+        const generatedImageUrl = `${IMAGE_GENERATOR_BASE_URL}/api/generate-image/?imageUrl=${encodedImageUrl}&liveText=${encodedLiveText}`;
         
         return generatedImageUrl;
     } else {

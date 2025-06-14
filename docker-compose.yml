@@ -4,7 +4,7 @@ services:
     container_name: image-generator
     restart: unless-stopped
     ports:
-      - "3000:3000"               # Expose only if you need external access
+      - "3001:3000"               # Expose only if you need external access
     environment:
       - NODE_ENV=production
       # - PORT=3000           
@@ -16,11 +16,11 @@ services:
     container_name: la12-addon
     restart: unless-stopped
     ports:
-      - "7000:7000"
+      - "7001:7000"
     environment:
       - PORT=7000
       - NODE_ENV=production
-      - IMAGE_GENERATOR_BASE_URL=http://image-generator:3000
+      - IMAGE_GENERATOR_BASE_URL=http://localhost:3001
       - TIMEZONE_OFFSET_HOURS=-6
       - SOURCE_TIMEZONE_OFFSET_HOURS=-6
     depends_on:
