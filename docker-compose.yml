@@ -1,0 +1,24 @@
+services:
+  image-generator:
+    image: ghcr.io/mkcfdc/image-generator:latest
+    container_name: image-generator
+    restart: unless-stopped
+    ports:
+      - "3001:3000"              
+    environment:
+      - NODE_ENV=production
+      # - PORT=3000           
+  la12-addon:
+    image: ghcr.io/mkcfdc/addon-sport-live-stremio:latest
+    container_name: la12-addon
+    restart: unless-stopped
+    ports:
+      - "7001:7000"
+    environment:
+      - PORT=7000
+      - NODE_ENV=production
+      - IMAGE_GENERATOR_BASE_URL=http://localhost:3001 # Recommend you use your internal IP here example: http://192.168.0.121:3001
+      - TIMEZONE_OFFSET_HOURS=-6
+      - SOURCE_TIMEZONE_OFFSET_HOURS=-6
+    depends_on:
+      - image-generator
