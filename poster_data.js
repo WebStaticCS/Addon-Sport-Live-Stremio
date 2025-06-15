@@ -1,7 +1,7 @@
 // poster_data.js
 
 module.exports = {
-  "mundial de clubes": "https://i.ibb.co/KcTfy7J0/images.png",
+  "Mundial de Clubes": "https://i.ibb.co/KcTfy7J0/images.png",
   "ufc": "https://i.ibb.co/ynC7V0Zh/7abf42956766027fc1fee6c18dbc1c40.jpg",
   "f1": "https://i.ibb.co/1YPJn9yT/8ZmZPNS.jpg",
   "primera a": "https://i.ibb.co/0j9Wh0MY/portada-la-fm-5-3.png",
@@ -38,5 +38,8 @@ module.exports = {
   "WWE" : "https://i.ibb.co/xqM1Cpbg/ZGd-Buo6ir-IBcnlj-5-Xdx-V14-EA546-YVh714ldzvb-Bmps.webp",
   "Premier Padel" : "https://i.ibb.co/LzJq6dXr/Tidy-Agency-Premier-Padel.jpg",
   "2025 U.S" : "https://i.ibb.co/sv6gHPv1/f-logo-NEW-20180319.jpg",
+  "Copa Oro" : "https://i.ibb.co/sp9YK7YY/rdcad4x3d0i4ztah9oyv.jpg",
+  "ATP" : "https://i.ibb.co/LDJGqGsb/3-ILUQY2-TJJGQDJT56-RN3-RNLU24.jpg",
+  "Torneo BetPlay DIMAYOR" : "https://i.ibb.co/6ct21y5t/Imagen-Torneo-Bet-Play-Dimayor-Puntos-Completos.png",
   "default_poster": "https://placehold.co/500x700/EEE/31343C?text=EVENTO" 
 };
