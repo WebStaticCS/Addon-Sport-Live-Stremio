@@ -1,3 +1,5 @@
+Was able to get a deployment to: https://asls.filmwhisper.dev/ --- No sports are playing right now, so I'm not sure if it works.
+
 **Disclaimer:** This addon is a test project, and its creator is not responsible for its use. The user is solely responsible for the content accessed and for complying with copyright laws.
 
 ---
