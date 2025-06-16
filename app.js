@@ -201,6 +201,7 @@ Promise.all([
 
     serveHTTP(builder.getInterface(), {
         port: ADDON_PORT,
+        hostname: '0.0.0.0',
         middleware: (req, res, next) => {
             next(); 
         }
