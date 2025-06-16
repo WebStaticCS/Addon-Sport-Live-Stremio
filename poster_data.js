@@ -1,7 +1,7 @@
 // poster_data.js
 
 module.exports = {
-  "Mundial de Clubes": "https://i.ibb.co/KcTfy7J0/images.png",
+  "Mundial de Clubes": "https://i.ibb.co/NdM18tHj/web-mclubes.jpg",
   "ufc": "https://i.ibb.co/ynC7V0Zh/7abf42956766027fc1fee6c18dbc1c40.jpg",
   "f1": "https://i.ibb.co/1YPJn9yT/8ZmZPNS.jpg",
   "primera a": "https://i.ibb.co/0j9Wh0MY/portada-la-fm-5-3.png",
