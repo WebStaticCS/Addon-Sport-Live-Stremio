@@ -1,5 +1,5 @@
 // PORT
-const ADDON_PORT = process.env.ADDON_PORT || 7000;
+const ADDON_PORT = process.env.PORT || 7000;
 // URL IMAGE VERCEL:  ==>>  'https://URL.vercel.app/api/generate-image'
 const IMAGE_GENERATOR_BASE_URL = process.env.IMAGE_GENERATOR_BASE_URL || '';
 // DESTINATION time zone offset in hours (e.g. -3 for UTC-3).
